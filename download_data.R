@@ -86,3 +86,5 @@ write.csv(all_interventions, paste("exports/interventions_", file_suffix, ".csv"
 # export the interventions_locations, you can connect both these files with different ids
 write.csv(interventions_locations, paste("exports/interventions_locations_", file_suffix, ".csv", sep = ""), na="", row.names = FALSE)
 
+# clean the memory if needed, just uncomment
+# rm(list = ls())
